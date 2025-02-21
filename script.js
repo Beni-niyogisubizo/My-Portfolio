@@ -1,14 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = e.target.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetSection.offsetTop - 50,
-                behavior: 'smooth'
-            });
-        });
-    });
+// Form Validation
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        event.preventDefault();
+    }
+});
+
+// Responsive Navbar (Toggle for Mobile)
+const navbar = document.getElementById('navbar');
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 768) {
+        navbar.style.flexDirection = 'column';
+    } else {
+        navbar.style.flexDirection = 'row';
+    }
 });

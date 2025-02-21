@@ -1,52 +1,99 @@
 <!DOCTYPE html>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-<section id="about">
-    <h1>Beni Niyogisubizo</h1>
-    <p>Since I was born, I was interested in aviation, but as I started growing up, I started seeing a difference in my interests and what I'd like to do. I started getting interested in nature and the protection of the ecosystem. But with that, I still saw a big increase in digitalized life and I wanted to see how I can use technology to provide a good coexistence between humans and other ecosystems. That is when I joined ALU to study Bachelor in Software Engineering.</p>
-</section>
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Basic HTML, CSS, Python, and JavaScript</li>
-        <li>Business administration and banking systems</li>
-        <li>Certified virtual assistant</li>
-        <li>Tourist guide</li>
-        <li>Courageous, motivated, passionate, and reliable</li>
-    </ul>
-</section>
-<section id="experience">
-    <h2>Work Experience</h2>
-    <ul>
-        <li>Intern for Equity Leaders Program at Equity Bank Rwanda</li>
-        <li>Remote Virtual Assistant</li>
-    </ul>
-</section>
-<section id="education">
-    <h2>Education</h2>
-    <ul>
-        <li>High School Graduate</li>
-        <li>Bachelor's Degree in Software Engineering at African Leadership University (ALU)</li>
-    </ul>
-</section>
-<section id="contact">
-    <h2>Contact Info</h2>
-    <ul>
-        <li>Tel: 250780686086</li>
-        <li>Email: <a href="mailto:niyo1beni@gmail.com">niyo1beni@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/beni-niyogisubizo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Beni Niyogisubizo</a></li>
-        <li>GitHub: <a href="https://github.com/Beni-niyogisubizo" target="_blank">Beni-niyogisubizo</a></li>
-    </ul>
-</section>
-<footer>
-    <p>&copy; 2025 Beni Niyogisubizo. All rights reserved.</p>
-</footer>
-<script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beni Niyogisubizo - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Beni Niyogisubizo</h1>
+        <p>Since I was born, I was interested in aviation, but as I grew up, I started seeing a difference in my interests. I became passionate about nature and ecosystem protection. However, I also noticed the rise of digitalized life and wanted to explore how technology can promote coexistence between humans and ecosystems. That's why I joined ALU to study Software Engineering.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Basic HTML, CSS, Python, and JavaScript</li>
+            <li>Business Administration and Banking Systems</li>
+            <li>Certified Virtual Assistant</li>
+            <li>Tourist Guide</li>
+            <li>Courageous, Motivated, Passionate, and Reliable</li>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Intern - Equity Leaders Program</h3>
+            <p>Equity Bank Rwanda | 2022</p>
+            <p>Worked as an intern, gaining experience in banking systems and operations.</p>
+        </div>
+        <div class="job">
+            <h3>Virtual Assistant</h3>
+            <p>Remote | 2021 - Present</p>
+            <p>Provided administrative support and managed tasks remotely.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="degree">
+            <h3>Bachelor of Software Engineering</h3>
+            <p>African Leadership University | 2023 - Present</p>
+        </div>
+        <div class="degree">
+            <h3>High School Diploma</h3>
+            <p>Graduated in 2022</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/beni-niyogisubizo" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Beni-niyogisubizo" target="_blank">GitHub</a>
+            <p>Email: niyo1beni@gmail.com</p>
+            <p>Phone: +250 780 686 086</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Beni Niyogisubizo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
